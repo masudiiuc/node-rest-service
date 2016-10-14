@@ -1,0 +1,11 @@
+{
+  "name": "node-rest-api",
+  "description": "Simple REST Service implementation",
+  "dependencies": {
+    "body-parser": "~1.0.1",
+    "express": "~4.0.0",
+    "jsonwebtoken": "^7.1.9",
+    "mongoose": "~3.6.13",
+    "morgan": "^1.7.0"
+  }
+}
