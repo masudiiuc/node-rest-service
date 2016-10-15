@@ -43,7 +43,7 @@ var authenticate = (function (){
     var isLoggedin = function (request, response, next) {
         var token = request.body.token || request.query.token || request.headers['x-access-token'];
 
-        if (request.url === '/authenticate') { //if try to login, avoid token check
+        if (request.url === '/authenticate' || request.url === '/setup') { //if try to login, avoid token check
             next();
             return false;
         }
